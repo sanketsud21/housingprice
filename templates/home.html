@@ -6,7 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<div>
 <body>
-    hello world
+    <h1>House Price Prediction</h1>
+    <form action="{{url_for('predict')}}" method="post">
+        <input type="text" name="area" placeholder="area"><br>
+        <button type="submit">Predict</button>
+    </form>
+</div>
+{{prediction_text}}
 </body>
+
 </html>
